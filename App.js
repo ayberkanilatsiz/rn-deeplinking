@@ -9,7 +9,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Linking} from 'react-native';
 
-
 export default class App extends Component {
 
   constructor(props) {
@@ -29,7 +28,9 @@ export default class App extends Component {
 
   handler = (event) => {
     const { url } = event;
+    console.log(event);
     const texts = url.split("//")[1].split("/");
+    console.log(texts);
     this.setState({texts});
   }
 

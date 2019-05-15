@@ -1,0 +1,3 @@
+rootProject.name = 'deep_linking'
+
+include ':app'
